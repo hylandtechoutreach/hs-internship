@@ -47,7 +47,7 @@ There are several components and components _within_ components, so the folder s
   - **📄 Logo.tsx** - a logo element used across the application
 - **📁 Main**: _top level screens / components_
   - **📄 AboutScreen.tsx** - [about page](https://hytop.onrender.com/about)
-  - **📄 CopyProjectScreen.tsx** - fork link (e.g., [https://hytop.onrender.com/c/www](https://hytop.onrender.com/c/www) copes **www**)
+  - **📄 CopyProjectScreen.tsx** - fork link (e.g., [https://hytop.onrender.com/c/www](https://hytop.onrender.com/c/www) copies **www**)
   - **📄 CreateProjectScreen.tsx** - [create project page](https://hytop.onrender.com/create-project)
   - **📄 Header.tsx** - top bar on top of every page
   - **📄 HomeScreen.tsx** - [homepage](https://hytop.onrender.com/)

@@ -23,7 +23,7 @@ The codebase is stored in this GitHub Repository:
 [https://github.com/hto-projects/hytop](https://github.com/hto-projects/hytop)
 
 Issues will be tracked in this GitHub Project:  
-[https://github.com/orgs/hto-projects/projects/10](https://github.com/orgs/hto-projects/projects/8)
+[https://github.com/orgs/hto-projects/projects/10](https://github.com/orgs/hto-projects/projects/10)
 
 ## Copyright
 All team members will be listed as copyright holders for the application codebase.
