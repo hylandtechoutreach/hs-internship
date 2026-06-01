@@ -211,39 +211,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="SummerSchedule.html">
-            
-                <a href="SummerSchedule.html">
-            
-                    
-                    Summer Schedule
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="MeetingDescriptions.html">
-            
-                <a href="MeetingDescriptions.html">
-            
-                    
-                    Meeting Descriptions
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="EnvironmentSetup.html">
+        <li class="chapter " data-level="1.4" data-path="EnvironmentSetup.html">
             
                 <a href="EnvironmentSetup.html">
             
@@ -257,7 +225,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="MongoAtlasSetup.html">
+        <li class="chapter " data-level="1.4.1" data-path="MongoAtlasSetup.html">
             
                 <a href="MongoAtlasSetup.html">
             
@@ -275,7 +243,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="LearningPaths.html">
+        <li class="chapter " data-level="1.5" data-path="LearningPaths.html">
             
                 <a href="LearningPaths.html">
             
@@ -289,7 +257,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="DevTools.html">
+        <li class="chapter " data-level="1.5.1" data-path="DevTools.html">
             
                 <a href="DevTools.html">
             
@@ -307,7 +275,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="FunThings.html">
+        <li class="chapter " data-level="1.6" data-path="FunThings.html">
             
                 <a href="FunThings.html">
             
@@ -321,7 +289,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="Videos.html">
+        <li class="chapter " data-level="1.6.1" data-path="Videos.html">
             
                 <a href="Videos.html">
             
@@ -334,7 +302,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="GenAi.html">
+        <li class="chapter " data-level="1.6.2" data-path="GenAi.html">
             
                 <a href="GenAi.html">
             
@@ -418,11 +386,103 @@
 <h3 id="app">App</h3>
 <p>In the <strong>App.tsx</strong> file lives the <code>&lt;App&gt;</code> component. This is really the main HTML container for everything else in the app.</p>
 <h3 id="components">Components</h3>
-<p>In React, a <a href="https://react.dev/learn/describing-the-ui#your-first-component" target="_blank">component</a> is an isolated piece of UI. Components are a lot like HTML Elements - in fact, they are represented in the same manner, using angle brackets like <code>&lt;ThisComponent&gt;&lt;/ThisComponent&gt;</code>. There are some components in the <strong>frontend/src/components/</strong> folder - all of which are meant to represent one small part of the larger app. The components in the <strong>frontend/src/screens</strong> folder pull in several of these components to make them work together.</p>
-<p>For example, the <code>&lt;FileSelector&gt;</code> component is a little piece of UI to represent the left side of the screen where files are chosen. It lists out each file in the list, and calls a function when a new file is chosen. A component is just a function that returns some JSX (basically HTML with JS or TS inside).</p>
+<p>In React, a <a href="https://react.dev/learn/describing-the-ui#your-first-component" target="_blank">component</a> is an isolated piece of UI. Components are a lot like HTML Elements - in fact, they are represented in the same manner, using angle brackets like <code>&lt;ThisComponent&gt;&lt;/ThisComponent&gt;</code>. There are some components in the <strong>frontend/src/components/</strong> folder - all of which are meant to represent one small part of the larger app.</p>
+<p>For example, the <code>&lt;FileSelectorComponent&gt;</code> component is a little piece of UI to represent the left side of the screen where files are chosen. It lists out each file in the list, and calls a function when a new file is chosen. A component is just a function that returns some JSX (basically HTML with JS or TS inside).</p>
 <p>Several components use the <a href="https://react.dev/reference/react/useEffect" target="_blank"><code>useEffect</code> hook</a> - this allows the application to sync a component with an external system.</p>
+<h4 id="folder-structure">Folder Structure</h4>
+<p>There are several components and components <em>within</em> components, so the folder structure is a little deep. Here is the full rundown of the <strong>components</strong> folder (as of June 1st, 2026):</p>
+<ul>
+<li><strong>&#x1F4C1; Interface</strong>: <em>general standalone UI components</em><ul>
+<li><strong>&#x1F4C4; Button.tsx</strong> - a button element used across the application</li>
+<li><strong>&#x1F4C4; Loader.tsx</strong> - a loader element used across the application</li>
+<li><strong>&#x1F4C4; Logo.tsx</strong> - a logo element used across the application</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; Main</strong>: <em>top level screens / components</em><ul>
+<li><strong>&#x1F4C4; AboutScreen.tsx</strong> - <a href="https://hytop.onrender.com/about" target="_blank">about page</a></li>
+<li><strong>&#x1F4C4; CopyProjectScreen.tsx</strong> - fork link (e.g., <a href="https://hytop.onrender.com/c/www" target="_blank">https://hytop.onrender.com/c/www</a> copes <strong>www</strong>)</li>
+<li><strong>&#x1F4C4; CreateProjectScreen.tsx</strong> - <a href="https://hytop.onrender.com/create-project" target="_blank">create project page</a></li>
+<li><strong>&#x1F4C4; Header.tsx</strong> - top bar on top of every page</li>
+<li><strong>&#x1F4C4; HomeScreen.tsx</strong> - <a href="https://hytop.onrender.com/" target="_blank">homepage</a></li>
+<li><strong>&#x1F4C4; LatestUpdatesScreen.tsx</strong> - <a href="https://hytop.onrender.com/latest-updates" target="_blank">latest updates page</a></li>
+<li><strong>&#x1F4C4; PrivateRoute.tsx</strong> - wrapper used to lock down some pages</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; Project View</strong>: <em>components for the <a href="https://hytop.onrender.com/e/www" target="_blank">project viewer / editor</a></em><ul>
+<li><strong>&#x1F4C1; File Editor</strong>: <em>components for the code editor itself</em><ul>
+<li><strong>&#x1F4C4; FileEditorComponent.tsx</strong> - a wrapper around a <a href="https://microsoft.github.io/monaco-editor/" target="_blank"><code>&lt;MonacoEditor /&gt;</code> component</a></li>
+<li><strong>&#x1F4C4; TabBar.tsx</strong> - a component to display open tabs at the top of the editor</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; Interface</strong>: <em>general UI for the project view</em><ul>
+<li><strong>&#x1F4C4; ProjectViewContainer.tsx</strong> - a wrapper around the whole project view</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; Preview</strong>: <em>components for the preview pane on the right</em></li>
+<li><strong>&#x1F4C4; PreviewComponent.tsx</strong> - a single component for the preview pane</li>
+<li><strong>&#x1F4C1; SideBar</strong>: <em>components for the sidebar pane on the left</em><ul>
+<li><strong>&#x1F4C1; FileSelector</strong>: <em>components for the file list / explorer selector</em><ul>
+<li><strong>&#x1F4C4; FileName.tsx</strong> - a component for one single File listed in the selector</li>
+<li><strong>&#x1F4C4; FileSelectorComponent.tsx</strong> - the actual component for the whole file selector</li>
+<li><strong>&#x1F4C4; FilesHeader.tsx</strong> - a component for the top of the file selector</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; Interface</strong>: <em>general UI for the sidebar</em><ul>
+<li><strong>&#x1F4C4; SideBarButton.tsx</strong> - a generalized button with a tooltip for choosing from the sidebar</li>
+<li><strong>&#x1F4C4; SideBarMenu.tsx</strong> - the combination of sidebar buttons to open their proper views</li>
+<li><strong>&#x1F4C4; SideBarPane.tsx</strong> - the display for whichever view is currently shown in the sidebar</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; ProjectSettings</strong>: <em>components for the settings view (project name + description)</em><ul>
+<li><strong>&#x1F4C4; ProjectSettingsComponent.tsx</strong> - a single component for the project settings view of the sidebar</li>
+</ul>
+</li>
+<li><strong>&#x1F4C4; SideBarComponent.tsx</strong> - the component that contains all the sidebar stuff</li>
+</ul>
+</li>
+<li><strong>&#x1F4C4; constants.tsx</strong> - values set to be referenced elsewhere</li>
+<li><strong>&#x1F4C4; ProjectViewScreen.tsx</strong> - the primary component for the whole Project View</li>
+<li><strong>&#x1F4C4; util.ts</strong> - helper functions for the project viewer</li>
+</ul>
+</li>
+<li><strong>&#x1F4C1; User</strong>: <em>components related to users / accounts / authentication</em><ul>
+<li><strong>&#x1F4C1; Preferences</strong>: <em>components for the preferences view (font size, etc)</em><ul>
+<li><strong>&#x1F4C4; DarkModeToggle.tsx</strong> - a little component for turning on/off dark mode</li>
+<li><strong>&#x1F4C4; PreferencesPane.tsx</strong> - a view for setting user preferences (currently shown in SideBar)</li>
+</ul>
+</li>
+<li><strong>&#x1F4C4; AdminPanel.tsx</strong> - special view for admins to do admin things</li>
+<li><strong>&#x1F4C4; LoginScreen.tsx</strong> - <a href="https://hytop.onrender.com/login" target="_blank">sign in page</a></li>
+<li><strong>&#x1F4C4; ProfileScreen.tsx</strong> - <a href="https://hytop.onrender.com/profile" target="_blank">where users view their profile</a></li>
+<li><strong>&#x1F4C4; ProjectList.tsx</strong> - helper component for viewing a list of projects</li>
+<li><strong>&#x1F4C4; RegisterScreen.tsx</strong> - <a href="https://hytop.onrender.com/register" target="_blank">register page</a></li>
+</ul>
+</li>
+</ul>
 <h3 id="slices">Slices</h3>
-<p>Slices are really weird. For the purposes of this application, they are mainly the way that the frontend asks for things from the backend. For example, if someone using the app wants to pull up a certain project, the frontend has to call up the backend and say &quot;this person wants to see this project.&quot; The backend will check the database and send back the proper information.</p>
+<p>Slices are really weird. For the purposes of this application, they are mainly used for:</p>
+<ul>
+<li>Frontend requests to the backend</li>
+<li>Frontend storage for data to be accessible across multiple components</li>
+</ul>
+<p>For requests to the backend, an example would be: if someone using the app wants to pull up a certain project, the frontend has to call up the backend and say &quot;this person wants to see this project.&quot; The backend will check the database and send back the proper information.</p>
+<pre><code class="lang-ts"><span class="hljs-comment">/* query defined as an endpoint in a slice */</span>
+getProject: builder.query({
+  query: (projectName) =&gt; {
+    <span class="hljs-keyword">return</span> {
+      url: <span class="hljs-string">`<span class="hljs-subst">${PROJECTS_URL}</span>/get/<span class="hljs-subst">${projectName}</span>`</span>,
+      method: <span class="hljs-string">&quot;GET&quot;</span>,
+    };
+  },
+  providesTags: [<span class="hljs-string">&quot;Project&quot;</span>]
+}),
+</code></pre>
+<pre><code class="lang-ts"><span class="hljs-comment">/* use within a component */</span>
+<span class="hljs-keyword">const</span> projectData = useGetProjectQuery(projectName);
+</code></pre>
+<p>For storage, an example would be: the <code>&lt;FileSelectorComponent /&gt;</code> component needs to know which tab is currently active, so it does this:</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">const</span> { activeTab } = useSelector((state: RootState) =&gt; state.editor);
+</code></pre>
 <h2 id="backend">Backend</h2>
 <p>The primary purpose of the backend is to work with the data from the MongoDB database. The <strong>server.ts</strong> file create the backend web server, and puts everything all together.</p>
 <h3 id="configdbts">config/db.ts</h3>
@@ -480,7 +540,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.3.2","depth":2,"next":{"title":"Team Workflow","level":"1.3.3","depth":2,"path":"TeamWorkflow.md","ref":"TeamWorkflow.md","articles":[]},"previous":{"title":"Technologies","level":"1.3.1","depth":2,"path":"Technologies.md","ref":"Technologies.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Hyland PEEKE Internship 2025","gitbook":"*"},"file":{"path":"Architecture.md","mtime":"2026-06-01T13:15:30.904Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-06-01T13:16:00.556Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.3.2","depth":2,"next":{"title":"Team Workflow","level":"1.3.3","depth":2,"path":"TeamWorkflow.md","ref":"TeamWorkflow.md","articles":[]},"previous":{"title":"Technologies","level":"1.3.1","depth":2,"path":"Technologies.md","ref":"Technologies.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Home.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Hyland PEEKE Internship 2025","gitbook":"*"},"file":{"path":"Architecture.md","mtime":"2026-06-01T16:04:02.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-06-01T16:04:34.161Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -7,20 +7,20 @@ Note that it is not necessary to have a full grasp of all of these concepts to s
 Check off these items as you complete them, or if you already have sufficient knowledge:
 
 <ul style="list-style-type: none">
-<input type="checkbox" id="html"> <a href="https://www.w3schools.com/html/">HTML Tutorial</a><br>
-<input type="checkbox" id="css"> <a href="https://www.w3schools.com/css/">CSS Tutorial</a><br>
-<input type="checkbox" id="js-1"> <a href="https://www.w3schools.com/js/">JavaScript Tutorial (Simpler)</a><br>
-<input type="checkbox" id="js"> <a href="https://javascript.info/">JavaScript Tutorial</a><br>
-<input type="checkbox" id="ts"> <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript Introduction</a><br>
-<input type="checkbox" id="ts-hb"> <a href="https://www.typescriptlang.org/docs/handbook/intro.html">TypeScript Handbook</a><br>
-<input type="checkbox" id="csa"> <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">Client-Server Architecture</a><br>
-<input type="checkbox" id="term"> <a href="http://www.mprat.org/Terminus/">Terminal</a><br>
-<input type="checkbox" id="exp"> <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs">Express with Node.js</a><br>
-<input type="checkbox" id="mdb"> <a href="https://www.mongodb.com/docs/manual/introduction/">MongoDB</a><br>
-<input type="checkbox" id="mgs"> <a href="https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/">Mongoose</a><br>
-<input type="checkbox" id="rttt"> <a href="https://react.dev/learn/tutorial-tic-tac-toe">React: Tic-Tac-Toe</a><br>
-<input type="checkbox" id="rfull"> <a href="https://react.dev/learn/describing-the-ui">React: Full Introduction</a><br>
-<input type="checkbox" id="lgb"> <a href="https://learngitbranching.js.org/">Learn Git Branching</a><br>
+  <input type="checkbox" id="html"> <a href="https://www.w3schools.com/html/">HTML Tutorial</a><br>
+  <input type="checkbox" id="css"> <a href="https://www.w3schools.com/css/">CSS Tutorial</a><br>
+  <input type="checkbox" id="js-1"> <a href="https://www.w3schools.com/js/">JavaScript Tutorial (Simpler)</a><br>
+  <input type="checkbox" id="js"> <a href="https://javascript.info/">JavaScript Tutorial</a><br>
+  <input type="checkbox" id="ts"> <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript Introduction</a><br>
+  <input type="checkbox" id="ts-hb"> <a href="https://www.typescriptlang.org/docs/handbook/intro.html">TypeScript Handbook</a><br>
+  <input type="checkbox" id="csa"> <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">Client-Server Architecture</a><br>
+  <input type="checkbox" id="term"> <a href="http://www.mprat.org/Terminus/">Terminal</a><br>
+  <input type="checkbox" id="exp"> <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs">Express with Node.js</a><br>
+  <input type="checkbox" id="mdb"> <a href="https://www.mongodb.com/docs/manual/introduction/">MongoDB</a><br>
+  <input type="checkbox" id="mgs"> <a href="https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/">Mongoose</a><br>
+  <input type="checkbox" id="rttt"> <a href="https://react.dev/learn/tutorial-tic-tac-toe">React: Tic-Tac-Toe</a><br>
+  <input type="checkbox" id="rfull"> <a href="https://react.dev/learn/describing-the-ui">React: Full Introduction</a><br>
+  <input type="checkbox" id="lgb"> <a href="https://learngitbranching.js.org/">Learn Git Branching</a><br>
 </ul>
 
 <script>

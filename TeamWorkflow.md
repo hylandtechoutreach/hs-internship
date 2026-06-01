@@ -18,7 +18,7 @@ If you are _not_ pair programming, you will need to make sure the whole team und
 ### Contributing to the Codebase
 [Click here to learn how you can start contributing to the codebase.](ContributionGuide.md) As you follow these steps, please leverage your fellow interns for assistance - and leverage your mentors as well!
 
-You can access the board with all the issues [here](https://github.com/orgs/hto-projects/projects/8).
+You can access the board with all the issues [here](https://github.com/orgs/hto-projects/projects/10).
 
 ## Autonomy
 It will be up to you, as a team, to complete the necessary work for this project. Ideally, you will be fully autonomous; self-governing, without the need for any overarching authority. There will be some structures in place to help you function to the best of your ability, but ultimately, your success is up to you. You, as a team, have the power to dictate the vision and determine the path forward for the project. The job of the Hyland leads and mentors is simply to provide you the best available space to make your team dreams come true.
