@@ -1,2 +1,2 @@
-# PEEKE Internship 2025
-This repository contains information for the PEEKE Internship at Hyland (Summer 2025).
+# High School Internships @ Hyland
+This repository contains information for the Y.O.U. PEEKE Internship at Hyland.
