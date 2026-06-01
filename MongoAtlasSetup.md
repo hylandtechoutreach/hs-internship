@@ -107,8 +107,6 @@ By default, access to the database is restricted to certain networks. Because of
 
 1. In the pop-up that appears, click the "ALLOW ACCESS FROM ANYWHERE" button, and then click "Confirm"
 
-  ![](Assets/AllowAllIps.png)
-
 At this point, the database should be fully connect-able.
 
 ## What's Next
