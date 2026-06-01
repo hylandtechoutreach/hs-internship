@@ -32,14 +32,91 @@ So, from there, there is one big thing: the `<App>` component (from the **App.ts
 In the **App.tsx** file lives the `<App>` component. This is really the main HTML container for everything else in the app.
 
 ### Components
-In React, a [component](https://react.dev/learn/describing-the-ui#your-first-component) is an isolated piece of UI. Components are a lot like HTML Elements - in fact, they are represented in the same manner, using angle brackets like `<ThisComponent></ThisComponent>`. There are some components in the **frontend/src/components/** folder - all of which are meant to represent one small part of the larger app. The components in the **frontend/src/screens** folder pull in several of these components to make them work together.
+In React, a [component](https://react.dev/learn/describing-the-ui#your-first-component) is an isolated piece of UI. Components are a lot like HTML Elements - in fact, they are represented in the same manner, using angle brackets like `<ThisComponent></ThisComponent>`. There are some components in the **frontend/src/components/** folder - all of which are meant to represent one small part of the larger app.
 
-For example, the `<FileSelector>` component is a little piece of UI to represent the left side of the screen where files are chosen. It lists out each file in the list, and calls a function when a new file is chosen. A component is just a function that returns some JSX (basically HTML with JS or TS inside).
+For example, the `<FileSelectorComponent>` component is a little piece of UI to represent the left side of the screen where files are chosen. It lists out each file in the list, and calls a function when a new file is chosen. A component is just a function that returns some JSX (basically HTML with JS or TS inside).
 
 Several components use the [`useEffect` hook](https://react.dev/reference/react/useEffect) - this allows the application to sync a component with an external system.
 
+#### Folder Structure
+There are several components and components _within_ components, so the folder structure is a little deep. Here is the full rundown of the **components** folder (as of June 1st, 2026):
+
+- **📁 Interface**: _general standalone UI components_
+  - **📄 Button.tsx** - a button element used across the application
+  - **📄 Loader.tsx** - a loader element used across the application
+  - **📄 Logo.tsx** - a logo element used across the application
+- **📁 Main**: _top level screens / components_
+  - **📄 AboutScreen.tsx** - [about page](https://hytop.onrender.com/about)
+  - **📄 CopyProjectScreen.tsx** - fork link (e.g., [https://hytop.onrender.com/c/www](https://hytop.onrender.com/c/www) copes **www**)
+  - **📄 CreateProjectScreen.tsx** - [create project page](https://hytop.onrender.com/create-project)
+  - **📄 Header.tsx** - top bar on top of every page
+  - **📄 HomeScreen.tsx** - [homepage](https://hytop.onrender.com/)
+  - **📄 LatestUpdatesScreen.tsx** - [latest updates page](https://hytop.onrender.com/latest-updates)
+  - **📄 PrivateRoute.tsx** - wrapper used to lock down some pages
+- **📁 Project View**: _components for the [project viewer / editor](https://hytop.onrender.com/e/www)_
+  - **📁 File Editor**: _components for the code editor itself_
+    - **📄 FileEditorComponent.tsx** - a wrapper around a [`<MonacoEditor />` component](https://microsoft.github.io/monaco-editor/)
+    - **📄 TabBar.tsx** - a component to display open tabs at the top of the editor
+  - **📁 Interface**: _general UI for the project view_
+    - **📄 ProjectViewContainer.tsx** - a wrapper around the whole project view
+  - **📁 Preview**: _components for the preview pane on the right_
+  -   **📄 PreviewComponent.tsx** - a single component for the preview pane
+  - **📁 SideBar**: _components for the sidebar pane on the left_
+    - **📁 FileSelector**: _components for the file list / explorer selector_
+      - **📄 FileName.tsx** - a component for one single File listed in the selector
+      - **📄 FileSelectorComponent.tsx** - the actual component for the whole file selector
+      - **📄 FilesHeader.tsx** - a component for the top of the file selector
+    - **📁 Interface**: _general UI for the sidebar_
+      - **📄 SideBarButton.tsx** - a generalized button with a tooltip for choosing from the sidebar
+      - **📄 SideBarMenu.tsx** - the combination of sidebar buttons to open their proper views
+      - **📄 SideBarPane.tsx** - the display for whichever view is currently shown in the sidebar
+    - **📁 ProjectSettings**: _components for the settings view (project name + description)_
+      - **📄 ProjectSettingsComponent.tsx** - a single component for the project settings view of the sidebar
+    - **📄 SideBarComponent.tsx** - the component that contains all the sidebar stuff
+  - **📄 constants.tsx** - values set to be referenced elsewhere
+  - **📄 ProjectViewScreen.tsx** - the primary component for the whole Project View
+  - **📄 util.ts** - helper functions for the project viewer
+- **📁 User**: _components related to users / accounts / authentication_
+  - **📁 Preferences**: _components for the preferences view (font size, etc)_
+    - **📄 DarkModeToggle.tsx** - a little component for turning on/off dark mode
+    - **📄 PreferencesPane.tsx** - a view for setting user preferences (currently shown in SideBar)
+  - **📄 AdminPanel.tsx** - special view for admins to do admin things
+  - **📄 LoginScreen.tsx** - [sign in page](https://hytop.onrender.com/login)
+  - **📄 ProfileScreen.tsx** - [where users view their profile](https://hytop.onrender.com/profile)
+  - **📄 ProjectList.tsx** - helper component for viewing a list of projects
+  - **📄 RegisterScreen.tsx** - [register page](https://hytop.onrender.com/register)
+
 ### Slices
-Slices are really weird. For the purposes of this application, they are mainly the way that the frontend asks for things from the backend. For example, if someone using the app wants to pull up a certain project, the frontend has to call up the backend and say "this person wants to see this project." The backend will check the database and send back the proper information.
+Slices are really weird. For the purposes of this application, they are mainly used for:
+
+- Frontend requests to the backend
+- Frontend storage for data to be accessible across multiple components
+
+For requests to the backend, an example would be: if someone using the app wants to pull up a certain project, the frontend has to call up the backend and say "this person wants to see this project." The backend will check the database and send back the proper information.
+
+```ts
+/* query defined as an endpoint in a slice */
+getProject: builder.query({
+  query: (projectName) => {
+    return {
+      url: `${PROJECTS_URL}/get/${projectName}`,
+      method: "GET",
+    };
+  },
+  providesTags: ["Project"]
+}),
+```
+
+```ts
+/* use within a component */
+const projectData = useGetProjectQuery(projectName);
+```
+
+For storage, an example would be: the `<FileSelectorComponent />` component needs to know which tab is currently active, so it does this:
+
+```ts
+const { activeTab } = useSelector((state: RootState) => state.editor);
+```
 
 ## Backend
 The primary purpose of the backend is to work with the data from the MongoDB database. The **server.ts** file create the backend web server, and puts everything all together.

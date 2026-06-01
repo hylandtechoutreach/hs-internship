@@ -38,7 +38,7 @@ There are some basic expectations all interns should meet:
 There may be points during the internship when you feel like there's not much to do. This could be because sprint work is completed, or you're stuck on an issue, or you have some extra time between meetings. When this happens, feel free to check out the [fun things page!](FunThings.md)
 
 ## Intake Questionnaire
-[Click here to complete a ~10 minute survey to share a bit more about yourself.](https://forms.office.com/r/xVG56L6zDV)
+[Click here to complete a ~10 minute survey to share a bit more about yourself.](https://forms.office.com/r/0t5V1PfHcC)
 
 ## First Week Checklist
 [Click here to view the first week checklist](FirstWeekChecklist.md)!

@@ -1,17 +1,14 @@
-# Hyland PEEKE Internship 2025
+# Hyland PEEKE Internship 2026
 Welcome to your summer at Hyland 😎🌞🌅🌴🌊
 
 #### Quick Links
-[Repo](https://github.com/hto-projects/hytop) _|||_ [Board](https://github.com/orgs/hto-projects/projects/8)
+[Repo](https://github.com/hto-projects/hytop) _|||_ [Board](https://github.com/orgs/hto-projects/projects/10)
 
 ## Internship Overview
 See what this internship is [all about](InternshipOverview.md).
 
 ## Project Information: HyTOP
 Find out more about what this summer's project - [an online IDE for Hyland Tech Outreach programs](ProjectInformation.md).
-
-## Summer Schedule
-Take a look at [what's on deck](SummerSchedule.md) for this summer, and [dig deeper](MeetingDescriptions.md) into what each meeting will entail.
 
 ## Environment Setup
 Get ready for development by [setting up your environment](EnvironmentSetup.md).

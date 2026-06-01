@@ -6,8 +6,6 @@
   - [Architecture](Architecture.md)
   - [Team Workflow](TeamWorkflow.md)
   - [Contribution Guide](ContributionGuide.md)
-- [Summer Schedule](SummerSchedule.md)
-  - [Meeting Descriptions](MeetingDescriptions.md)
 - [Environment Setup](EnvironmentSetup.md)
   - [MongoDB Atlas Setup](MongoAtlasSetup.md)
 - [Learning Paths](LearningPaths.md)
