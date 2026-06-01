@@ -22,14 +22,14 @@ Be sure to replace `FIRST_NAME LAST_NAME` with your first & last name, and repla
 In order to push changes to the remote repository, you will need to authenticate yourself. You should be prompted to sign in the first time you attempt to push. After that, it should save your authentication information for any future pushes.
 
 ## Starting from an Issue
-For every piece of development work, there should be a corresponding issue on the [project board](https://github.com/orgs/hto-projects/projects/8). If you are working on an issue, you should be assigned under the "Assignees" field:
+For every piece of development work, there should be a corresponding issue on the [project board](https://github.com/orgs/hto-projects/projects/10). If you are working on an issue, you should be assigned under the "Assignees" field:
 
 ![](Assets/GitHubIssueAssignee.png)
 
 ### Creating Your Own Issue
 As the project progresses, you will have the opportunity to create your own issues.
 
-1. Open the [board](https://github.com/orgs/hto-projects/projects/8)
+1. Open the [board](https://github.com/orgs/hto-projects/projects/10)
 1. Click the "+ Add item" link under the appropriate column  
     ![](Assets/GitHubBoardAddItem.png)
 1. Type in a hashtag (`#`) and select the proper repo (in this case: **hytop**)  
@@ -48,7 +48,7 @@ Now you have an issue ready for development.
 ## Creating a Feature Branch
 Once you have an issue and it has been properly assigned to you,  it's time to start working on it. Work will be done in a feature branch.
 
-1. Open the [board](https://github.com/orgs/hto-projects/projects/8)
+1. Open the [board](https://github.com/orgs/hto-projects/projects/10)
 2. When you're ready to work, drag the issue into the "In Progress" column  
     ![](Assets/GitHubBoardMoveToInProgress.png)
 3. Click the issue to open it
