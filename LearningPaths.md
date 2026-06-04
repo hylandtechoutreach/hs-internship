@@ -18,6 +18,7 @@ Check off these items as you complete them, or if you already have sufficient kn
   <input type="checkbox" id="exp"> <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs">Express with Node.js</a><br>
   <input type="checkbox" id="mdb"> <a href="https://www.mongodb.com/docs/manual/introduction/">MongoDB</a><br>
   <input type="checkbox" id="mgs"> <a href="https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/">Mongoose</a><br>
+  <input type="checkbox" id="rqs"> <a href="https://react.dev/learn">React: Quick Start</a><br>
   <input type="checkbox" id="rttt"> <a href="https://react.dev/learn/tutorial-tic-tac-toe">React: Tic-Tac-Toe</a><br>
   <input type="checkbox" id="rfull"> <a href="https://react.dev/learn/describing-the-ui">React: Full Introduction</a><br>
   <input type="checkbox" id="lgb"> <a href="https://learngitbranching.js.org/">Learn Git Branching</a><br>
@@ -90,6 +91,7 @@ The most crucial feature of the application's backend server is its ability to c
 ## Frontend Component Framework: React
 React is an incredibly powerful component-based framework for the web. Here are some helpful ways to learn React, with varying commitment levels:
 
+- [Quick Start](https://react.dev/learn)
 - [Tic-Tac-Toe Tu-To-Rial](https://react.dev/learn/tutorial-tic-tac-toe)
 - [React Mindset](https://react.dev/learn/thinking-in-react)
 - [Full Guide](https://react.dev/learn/describing-the-ui)
