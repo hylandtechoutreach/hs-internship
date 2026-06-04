@@ -47,7 +47,7 @@ There are several components and components _within_ components, so the folder s
   - **📄 Logo.tsx** - a logo element used across the application
 - **📁 Main**: _top level screens / components_
   - **📄 AboutScreen.tsx** - [about page](https://hytop.onrender.com/about)
-  - **📄 CopyProjectScreen.tsx** - fork link (e.g., [https://hytop.onrender.com/c/www](https://hytop.onrender.com/c/www) copies **www**)
+  - **📄 CopyProjectScreen.tsx** - fork link (e.g., [https://hytop.onrender.com/c/www](https://hytop.onrender.com/c/www))
   - **📄 CreateProjectScreen.tsx** - [create project page](https://hytop.onrender.com/create-project)
   - **📄 Header.tsx** - top bar on top of every page
   - **📄 HomeScreen.tsx** - [homepage](https://hytop.onrender.com/)
@@ -67,11 +67,11 @@ There are several components and components _within_ components, so the folder s
       - **📄 FileSelectorComponent.tsx** - the actual component for the whole file selector
       - **📄 FilesHeader.tsx** - a component for the top of the file selector
     - **📁 Interface**: _general UI for the sidebar_
-      - **📄 SideBarButton.tsx** - a generalized button with a tooltip for choosing from the sidebar
+      - **📄 SideBarButton.tsx** - a generalized button with a tooltip
       - **📄 SideBarMenu.tsx** - the combination of sidebar buttons to open their proper views
       - **📄 SideBarPane.tsx** - the display for whichever view is currently shown in the sidebar
     - **📁 ProjectSettings**: _components for the settings view (project name + description)_
-      - **📄 ProjectSettingsComponent.tsx** - a single component for the project settings view of the sidebar
+      - **📄 ProjectSettingsComponent.tsx** - a single component for the project settings view
     - **📄 SideBarComponent.tsx** - the component that contains all the sidebar stuff
   - **📄 constants.tsx** - values set to be referenced elsewhere
   - **📄 ProjectViewScreen.tsx** - the primary component for the whole Project View
