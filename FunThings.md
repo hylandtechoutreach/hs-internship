@@ -21,6 +21,9 @@ As part of our efforts to connect with the youth, we maintain a collection of im
 
 [Tech Outreach Image Bank](https://hylandsw-my.sharepoint.com/:f:/g/personal/joseph_maxwell_hyland_com/IgAQP7q43E5nRZzFrzDE0cUCAaY5UYFpQvtCzV3AOf2yffI)
 
+# Student Outreach Help
+We want to reach more students, and serve them better. [Please add your ideas to this document!](https://docs.google.com/document/d/1hmUqpp0aDlDvxZysyfD7JGlm-4kOQaPCrjmcG_yZIY0/edit?usp=sharing)
+
 ## Diversions
 If you have some downtime, here are some ideas for other things to do:
 
