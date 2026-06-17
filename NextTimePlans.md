@@ -1,0 +1,10 @@
+- set 60 minutes for IS setup
+- ENVIRONMENT SETUP
+  - Try to test environment setup ahead of time with installs /etc
+  - update instructions
+  - ensure .env-examples work okay
+- Update first week checklist
+  - "Send Joseph your GitHub username (create account if needed, use personal email)"
+  - "Update your Outlook calendar with your scheduled out-of-office time"
+- Start day one with icebreakers
+- add a "PR Walkthrough" meeting
