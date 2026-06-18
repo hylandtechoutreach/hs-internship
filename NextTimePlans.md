@@ -6,5 +6,14 @@
 - Update first week checklist
   - "Send Joseph your GitHub username (create account if needed, use personal email)"
   - "Update your Outlook calendar with your scheduled out-of-office time"
+  - find bug OR new feature idea
 - Start day one with icebreakers
 - add a "PR Walkthrough" meeting
+- actual sessions instead of crash course
+  - HTML/CSS/JS
+  - React
+  - Node.js
+  - Git/GitHub
+  - Full Stack
+  - students can choose to attend OR choose to skip
+  - 

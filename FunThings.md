@@ -19,7 +19,7 @@ Feel free to utilize all of these facilities!
 ## Image Bank
 As part of our efforts to connect with the youth, we maintain a collection of images of potential relevance. Mostly, they are used for our [Welcoming Kiosks](https://hylandtechclub.com/Kiosk?show=mcccc52126) and are currently stored in [this GitHub repository](https://github.com/hytechclub/hytechclub.github.io/tree/main/Kiosk/Assets). We would like to continue to grow this collection. To that end, please upload pictures to this OneDrive folder:
 
-[Tech Outreach Image Bank](https://hylandsw-my.sharepoint.com/:f:/g/personal/joseph_maxwell_hyland_com/IgAQP7q43E5nRZzFrzDE0cUCAaY5UYFpQvtCzV3AOf2yffI)
+[Tech Outreach Image Bank](https://hylandsw-my.sharepoint.com/:f:/g/personal/joseph_maxwell_hyland_com/IgAQP7q43E5nRZzFrzDE0cUCAfgrb8_rTSoUarDhYJwlAT8?e=DlaHOw) _(password is just the letter **i**)_
 
 # Student Outreach Help
 We want to reach more students, and serve them better. [Please add your ideas to this document!](https://docs.google.com/document/d/1hmUqpp0aDlDvxZysyfD7JGlm-4kOQaPCrjmcG_yZIY0/edit?usp=sharing)
