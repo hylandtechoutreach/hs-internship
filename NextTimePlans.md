@@ -7,6 +7,8 @@
   - "Send Joseph your GitHub username (create account if needed, use personal email)"
   - "Update your Outlook calendar with your scheduled out-of-office time"
   - find bug OR new feature idea
+  - Add one image to our image bank
+  - Add one idea to our outreach document
 - Start day one with icebreakers
 - add a "PR Walkthrough" meeting
 - actual sessions instead of crash course
@@ -16,4 +18,3 @@
   - Git/GitHub
   - Full Stack
   - students can choose to attend OR choose to skip
-  - 
