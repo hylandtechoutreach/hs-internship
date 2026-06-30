@@ -12,3 +12,6 @@ Here are some presentations
 
 ## Crash Course
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechoutreach.github.io/hs-internship/CrashCourse.pptx' width='100%' height='450px' frameborder='0'></iframe>
+
+## Project Roadmap (June 25)
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechoutreach.github.io/hs-internship/ProjectRoadmap.pptx' width='100%' height='450px' frameborder='0'></iframe>
